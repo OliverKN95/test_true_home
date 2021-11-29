@@ -1,6 +1,6 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+# Byte-compiled / optimized / DLL files4
 /__pycache__/
+__pycache__/
 *.py[cod]
 
 # C extensions
@@ -56,3 +56,4 @@ docs/_build/
 
 # PyBuilder
 target/
+test_true_home/__pycache__/settings.cpython-39.pyc
