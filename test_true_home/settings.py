@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'test_true_home.apps.truehome'
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'test_true_home.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'localhost',
+        'NAME': 'truehome',
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'PORT': '5432'
     }
 }
 
