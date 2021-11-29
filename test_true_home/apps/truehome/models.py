@@ -84,7 +84,7 @@ class SurveyModel(models.Model):
         auto_now_add=True, verbose_name=_("Created at"))
 
     def __str__(self):
-        return self.property.id + "-" + self.title
+        return self.activity.id + "-" + self.title
 
     class Meta:
         verbose_name = _("Activity")
